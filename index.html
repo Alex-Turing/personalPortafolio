@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del Proyecto Roboto Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+    <!-- Navigation menu section -->
+    <section class="nav-menu__container">
+        <nav class="nav-menu">
+        <a href="#about-me">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#work-experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <div class="nav-menu__dot"></div>
+        </nav>
+    </section>
+
+    <!-- Sección de Presentación -->
+     <div class="presentation__container" id="about-me">
+        <section class="presentacion">
+            <!-- Card for Image and Title -->
+            <div class="card presentacion__card">
+                <div class="card-body presentacion__card-body">
+                    <img class="img-fluid presentacion__foto" src="assets/AlexHeadshot.jpg" alt="Foto de perfil">
+                    <h1 class="presentacion__titulo">ALEXANDER HERNANDEZ</h1>
+                </div>
+            </div>
+        
+            <!-- Card for Social Media Links -->
+            <div class="card presentacion__card redes__card">
+                <div class="card-body">
+                    <div class="icons__card-body">
+                        <img class="redes__developer-icon" src="assets/coding-icon.jpg" alt="code icon">
+                        <p class="text__redes__card-body">Software Developer</p>
+                    </div>
+                    <div class="icons__card-body">
+                        <img class="redes__developer-icon" src="assets/comms-icon.png" alt="code icon">
+                        <p class="text__redes__card-body">Telecommunications Engineer</p>
+                    </div>
+                    <div class="card-body social-media__card-body">
+                        <a href="#" class="social-media-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-media-icon github"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-media-icon email"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="sobre-mi">
+            <div class="about-me__external-card">
+                <div class="about-me__internal-card">
+                    <p class="about-me__text">
+                        👋 Hi there, I’m Alexander!
+
+                        I’m a telecommunications engineer turned software developer, having earned my software development 
+                        degree from Mohawk College (Hamilton, ON). I have passion for creating sleek, functional, and impactful digital solutions. 
+                        Whether it’s building intuitive front-end interfaces or crafting robust back-end systems, 
+                        I love bridging the gap between technology and creativity.
+                    </p>
+                    <p class="about-me__text">    
+                        Right now, I’m:<br/>
+                        🌐 Exploring new frameworks and sharpening my full-stack skills.<br/>
+                        🛠️ Building personal projects (and occasionally breaking them).<br/>
+                        🚴 Balancing my code obsession with outdoor adventures on two wheels.<br/><br/>
+                        
+                        I thrive in agile environments, aim for clean and scalable solutions, and always bring a dash of 
+                        humor to my work. Let’s connect and build something amazing together!.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <div class="skills__container" id="skills__container">
+            <div class="skills__container__crop">
+            <ul class="skills__container__card-list" style="--count: 11;">
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="skills__icon" src="assets/html.png" alt="HTML"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="skills__icon" src="assets/css_icon.png" alt="CSS"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="skills__icon" src="assets/js_icon.png" alt="JavaScript"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://www.php.net/"><img class="skills__icon" src="assets/php_icon.png" alt="PHP"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://nodejs.org/en"><img class="skills__icon" src="assets/nodejs_icon.png" alt="Node.js"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://react.dev/"><img class="skills__icon" src="assets/react_icon.png" alt="React"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://www.java.com/en/"><img class="skills__icon" src="assets/java_icon.png" alt="Java"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://dotnet.microsoft.com/en-us/languages/csharp"><img class="skills__icon" src="assets/csharp_icon.png" alt="C#"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://dotnet.microsoft.com/en-us/"><img class="skills__icon" src="assets/dotnet_icon.png" alt=".NET"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-9.0"><img class="skills__icon" src="assets/aspnet_icon.png" alt="ASP.NET"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://www.python.org/"><img class="skills__icon" src="assets/python_icon.png" alt="Python"></a></div></li>
+                <li class="skills__container__card-list__bullet"><div class="card__bullet"><a href="https://www.oracle.com/database/technologies/appdev/sql.html"><img class="skills__icon" src="assets/sql_icon.png" alt="Sql"></a></div></li>
+            </ul>
+            <div class="last-circle"></div>
+            <div class="second-circle"></div>
+            </div>
+            <div class="mask"></div>
+            <div class="center-circle"><span class="skills__title">Skills</span></div>
+        <div>
+    </section>
+
+    <!-- Sección de Formación académica -->
+    <!-- From Uiverse.io by gharsh11032000-->
+    <section class="work-experience" id="work-experience">
+        <h1 class="work-experience__title">Work Experience</h1>
+        <div class="work-experience__cards--container">
+            <div class="work-experience__card">
+                <img class="work-experience__icon" src="assets/rs_logo.png" alt="R&S">
+                <div class="work-experience__card__content">
+                    <p class="work-experience__card__title">ADT/ICR/WIC ACCOUNT ENGINEER</p>
+                    <p class="work-experience__card__description">Spearheaded innovative projects, including Latin America’s first 5G device test lab for Claro Colombia, 
+                        Colombia’s first spectrum-monitoring drone for the National Spectrum Agency, and the early implementation of an Electromagnetic Compatibility test 
+                        lab for CubeSats, adhering to MIL-STD 461 standards for the Colombian Air Force. Collaborated closely with stakeholders to meet user requirements, 
+                        enhance national capabilities, and deliver cutting-edge solutions with precision and efficiency.
+                    </p>
+                </div>
+            </div>
+            <div class="work-experience__card">
+                <img class="work-experience__icon" src="assets/le_logo.png" alt="LE">
+                <div class="work-experience__card__content">
+                    <p class="work-experience__card__title">SOFTWARE DEVELOPER INTERN</p>
+                    <p class="work-experience__card__description">Developed scalable, maintainable software solutions using <span class="important-descrption">ASP.NET, 
+                        Entity Framework Core, and WinForms</span>, enhancing troubleshooting efficiency and the engineering team’s 
+                        diagnostic capabilities for plasma cutting robots. Adhered to <span class="important-descrption">SOLID principles</span>, clean architecture, 
+                        and <span class="important-descrption">Agile (SCRUM) methodologies</span> to ensure high-quality, adaptable code. Leveraged <span class="important-descrption">Azure DevOps</span> for 
+                        version control and project management, created comprehensive <span class="important-descrption">unit tests</span>, and documented functionalities 
+                        to improve software reliability in <span class="important-descrption">C# applications</span>, reduce technical debt, and support long-term success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h1 class="work-experience__title">Projects</h1>
+        <div class="projects__container">
+            <!--From Uiverse.io by eslam-hany --> 
+            <div class="projects__book-card">
+                <video class="react__project__demo-video" src="assets/reactNativeSdk.mp4" controls></video>
+                <div class="projects__cover-card">
+                    <p class="projects__cover-text"><span style="font-weight: bold;">"Treasure Hunt Adventure"</span> is an interactive app built with React Native 
+                        and Expo, turning a classic treasure hunt into a digital adventure for 
+                        kids! Featuring GPS tracking, QR code scanning, and haptic feedback, 
+                        it encourages exploration, clue-solving, and fun discoveries. 
+                        A perfect blend of technology and imagination to spark joy in young 
+                        adventurers! 🚀
+                    </p>
+                </div>
+                <a href="https://github.com/Alex-Turing/treasureHuntingReactApp" class="projects__book-card__github-link" data-tooltip="Download Repo"><img class="projects__book-card__icon" src="assets/github_icon.png" alt="github"></a>
+            </div>
+            
+            <div class="projects__book-card">
+                <video class="santa__project__demo-video" src="assets/reactNodeJSRedis.mp4" controls></video>
+                <div class="projects__cover-card">
+                    <p class="projects__cover-text"><span style="font-weight: bold;">Santa's Gifts List App</span> is a React Native app with a Node.js backend 
+                        using Redis for managing gifts. Users can add, edit, delete, save, and restore gifts, 
+                        with real-time synchronization. The app demonstrates seamless integration of modern 
+                        frontend and backend technologies, featuring React Native for the UI and Redis for 
+                        persistent storage. It’s a great example of how to build a full-stack application 
+                        with real-time capabilities.🎁
+                    </p>
+                </div>
+                <a href="https://github.com/Alex-Turing/santaGiftList" class="projects__book-card__github-link" data-tooltip="Download Repo"><img class="projects__book-card__icon" src="assets/github_icon.png" alt="github"></a>
+            </div>
+
+            <div class="projects__book-card">
+                <video class="react__project__demo-video" src="assets/reactNativeSdk.mp4" controls></video>
+                <div class="projects__cover-card">
+                    <p class="projects__cover-text"><span style="font-weight: bold;">"Treasure Hunt Adventure"</span> is an interactive app built with React Native 
+                        and Expo, turning a classic treasure hunt into a digital adventure for 
+                        kids! Featuring GPS tracking, QR code scanning, and haptic feedback, 
+                        it encourages exploration, clue-solving, and fun discoveries. 
+                        A perfect blend of technology and imagination to spark joy in young 
+                        adventurers! 🚀
+                    </p>
+                </div>
+                <a href="https://github.com/Alex-Turing/treasureHuntingReactApp" class="projects__book-card__github-link" data-tooltip="Download Repo"><img class="projects__book-card__icon" src="assets/github_icon.png" alt="github"></a>
+            </div>
+
+            <div class="projects__book-card">
+                <video class="react__project__demo-video" src="assets/reactNativeSdk.mp4" controls></video>
+                <div class="projects__cover-card">
+                    <p class="projects__cover-text"><span style="font-weight: bold;">"Treasure Hunt Adventure"</span> is an interactive app built with React Native 
+                        and Expo, turning a classic treasure hunt into a digital adventure for 
+                        kids! Featuring GPS tracking, QR code scanning, and haptic feedback, 
+                        it encourages exploration, clue-solving, and fun discoveries. 
+                        A perfect blend of technology and imagination to spark joy in young 
+                        adventurers! 🚀
+                    </p>
+                </div>
+                <a href="https://github.com/Alex-Turing/treasureHuntingReactApp" class="projects__book-card__github-link" data-tooltip="Download Repo"><img class="projects__book-card__icon" src="assets/github_icon.png" alt="github"></a>
+            </div>
+
+            <div class="projects__book-card">
+                <video class="react__project__demo-video" src="assets/reactNativeSdk.mp4" controls></video>
+                <div class="projects__cover-card">
+                    <p class="projects__cover-text"><span style="font-weight: bold;">"Treasure Hunt Adventure"</span> is an interactive app built with React Native 
+                        and Expo, turning a classic treasure hunt into a digital adventure for 
+                        kids! Featuring GPS tracking, QR code scanning, and haptic feedback, 
+                        it encourages exploration, clue-solving, and fun discoveries. 
+                        A perfect blend of technology and imagination to spark joy in young 
+                        adventurers! 🚀
+                    </p>
+                </div>
+                <a href="https://github.com/Alex-Turing/treasureHuntingReactApp" class="projects__book-card__github-link" data-tooltip="Download Repo"><img class="projects__book-card__icon" src="assets/github_icon.png" alt="github"></a>
+            </div>
+            
+            <div class="projects__book-card">
+                <video class="react__project__demo-video" src="assets/reactNativeSdk.mp4" controls></video>
+                <div none !important;!important;="projects__cover-card">
+                    <p class="projects__cover-text"><span style="font-weight: bold;">"Treasure Hunt Adventure"</span> is an interactive app built with React Native 
+                        and Expo, turning a classic treasure hunt into a digital adventure for 
+                        kids! Featuring GPS tracking, QR code scanning, and haptic feedback, 
+                        it encourages exploration, clue-solving, and fun discoveries. 
+                        A perfect blend of technology and imagination to spark joy in young 
+                        adventurers! 🚀
+                    </p>
+                </div>
+                <a href="https://github.com/Alex-Turing/treasureHuntingReactApp" class="projects__book-card__github-link" data-tooltip="Download Repo"><img class="projects__book-card__icon" src="assets/github_icon.png" alt="github"></a>
+            </div>
+
+            <div class="projects__book-card">
+                <video class="react__project__demo-video" src="assets/reactNativeSdk.mp4" controls></video>
+                <div class="projects__cover-card">
+                    <p class="projects__cover-text"><span style="font-weight: bold;">"Treasure Hunt Adventure"</span> is an interactive app built with React Native 
+                        and Expo, turning a classic treasure hunt into a digital adventure for 
+                        kids! Featuring GPS tracking, QR code scanning, and haptic feedback, 
+                        it encourages exploration, clue-solving, and fun discoveries. 
+                        A perfect blend of technology and imagination to spark joy in young 
+                        adventurers! 🚀
+                    </p>
+                </div>
+                <a href="https://github.com/Alex-Turing/treasureHuntingReactApp" class="projects__book-card__github-link" data-tooltip="Download Repo"><img class="projects__book-card__icon" src="assets/github_icon.png" alt="github"></a>
+            </div>
+
+            <div class="projects__book-card">
+                <video class="react__project__demo-video" src="assets/reactNativeSdk.mp4" controls></video>
+                <div class="projects__cover-card">
+                    <p class="projects__cover-text"><span style="font-weight: bold;">"Treasure Hunt Adventure"</span> is an interactive app built with React Native 
+                        and Expo, turning a classic treasure hunt into a digital adventure for 
+                        kids! Featuring GPS tracking, QR code scanning, and haptic feedback, 
+                        it encourages exploration, clue-solving, and fun discoveries. 
+                        A perfect blend of technology and imagination to spark joy in young 
+                        adventurers! 🚀
+                    </p>
+                </div>
+                <a href="https://github.com/Alex-Turing/treasureHuntingReactApp" class="projects__book-card__github-link" data-tooltip="Download Repo"><img class="projects__book-card__icon" src="assets/github_icon.png" alt="github"></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contacto" id="contacto">
+        <h2 class="contacto__titulo">Contacto</h2>
+        <form class="contacto__formulario">
+            <input class="contacto__campo" type="text" placeholder="Nombre">
+            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+            <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+    <script src="script.js"></script>
+</html>
