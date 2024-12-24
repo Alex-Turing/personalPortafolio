@@ -634,6 +634,26 @@ svg {
     z-index: 0; 
 }
 
+.unity__project__demo-video {
+    width: 85%; 
+    height: 55%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25); 
+    position: absolute; 
+    z-index: 0; 
+}
+
+.java__project__demo-video {
+    width: 85%; 
+    height: 85%; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25); 
+    position: absolute; 
+    z-index: 0; 
+}
+
 .projects__cover-card {
     top: 0;
     position: absolute;
