@@ -10,10 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fuente del Proyecto Roboto Mono -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    
-    <title>Mi Portafolio</title>
+    <title>AlxDevHub</title>
 </head>
 
 <body>
@@ -28,7 +26,7 @@
         </nav>
     </section>
 
-    <!-- Sección de Presentación -->
+    <!-- Presentation Section -->
      <div class="presentation__container" id="about-me">
         <section class="presentacion">
             <!-- Card for Image and Title -->
@@ -51,9 +49,9 @@
                         <p class="text__redes__card-body">Telecommunications Engineer</p>
                     </div>
                     <div class="card-body social-media__card-body">
-                        <a href="#" class="social-media-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="social-media-icon github"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" class="social-media-icon email"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/alexander-hernandez-software-developer" class="social-media-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Alex-Turing" class="social-media-icon github"><i class="fa-brands fa-github"></i></a>
+                        <a href="#contact" class="social-media-icon email"><i class="fa-regular fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -251,15 +249,26 @@
         </div>
     </section>
 
-    <!-- Sección de Contacto -->
-    <section class="contacto" id="contacto">
-        <h2 class="contacto__titulo">Contacto</h2>
-        <form class="contacto__formulario">
-            <input class="contacto__campo" type="text" placeholder="Nombre">
-            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
-            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-            <button class="contacto__boton" type="submit">Enviar</button>
-        </form>
+    <!-- Contact Section -->
+    <section class="contact-section__container" id="contact">
+        <h2 class="work-experience__title">Contact</h2>
+        <div class="contact__container">
+                <form class="contact__form" id="contact-form">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input class="contact__name" type="text" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input class="contact__email" type="text" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Let's connect! My inbox is always open.</label>
+                    <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+                </div>
+                <button class="form__submit__button" type="submit">Submit</button>
+            </form>
+        </div>
     </section>
 </body>
     <script src="script.js"></script>
