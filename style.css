@@ -126,11 +126,11 @@ body {
     background-color: transparent transparent;
 }
 
-.presentacion, .about-me {
+.presentation, .about-me {
     flex: 1;
 }
 
-.presentacion {
+.presentation {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -139,7 +139,7 @@ body {
     background-color: transparent transparent;
 }
 
-.presentacion__card {
+.presentation__card {
     background-color: transparent;
     border-radius: 0.5rem;
     border: none;
@@ -149,7 +149,7 @@ body {
     overflow: hidden;
 }
 
-.presentacion__card-body {
+.presentation__card-body {
     position: relative;
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@ body {
     padding: 2.5rem;
 }
 
-.presentacion__foto {
+.presentation__foto {
     width: 60%;
     height: 60%;
     object-fit: cover;
@@ -166,7 +166,7 @@ body {
     margin-bottom: 5rem;
 }
 
-.presentacion__titulo {
+.presentation__titulo {
     font-family: "Roboto Mono", monospace;
     font-size: 4rem;
     margin-bottom: 2rem;;
@@ -844,38 +844,141 @@ svg {
 
 /* ------------------------------ Responsividad ---------------------------------------*/
 
-/* Tablets y pantallas más grandes */
-@media (min-width: 768px) {
-    .cabecera {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cabecera__logo {
-        max-width: 100px;
-    }
-
-    .cabecera__titulo {
-        font-size: 1.5rem;
-    }
-
-    .navegacion__lista {
+/* Phones */
+@media (max-width: 767px) {
+    /*------- Navigation Menu -------*/
+    .nav-menu {
         display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
+        justify-content: space-around; 
+        gap: 0; 
+        width: 100%; 
     }
 
-    .navegacion__elemento a {
-        font-size: 1rem;
+    .nav-menu a {
+        color: #f6f4e6;
+        text-decoration: none;
+        font-size: 1.5rem; 
+        text-transform: none; /* Remove uppercase transformation */
+        font-weight: 500;
+        position: relative;
+        display: inline-flex; 
+        flex-direction: column;
+        align-items: center;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .nav-menu a:hover {
+        color: #fddb3a; 
+    }
+
+    .nav-menu a span {
+        display: none; 
+    }
+
+    .nav-menu a i {
+        display: inline-block; 
+    }
+
+    .nav-menu__dot {
+        display: none; 
+    }
+
+    /*------- Presentation Section -------*/
+    .presentation__container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+    }
+
+    .presentation {
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+        align-items: start;
+    }
+
+    .presentation__card {
+        width: 95%;
+    }
+
+    .presentation__card-body {
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+
+    .presentation__titulo {
+        font-size: 2rem; 
+        text-align: left; 
+        margin-bottom: 1rem;
+        position: relative; 
+        top: 0;
+        left: 0;
+    }
+
+    .presentation__foto {
+        display: none; 
+    }
+
+    .about-me {
+        width: 90%; /* Occupy 90% of screen width */
+        margin: 0 auto; /* Center horizontally */
+        margin-top: 1rem; /* Add some spacing */
+    }
+
+    .presentation__card {
+        width: 90%; /* Make it occupy 90% of screen width */
+        margin: 1rem auto; /* Center horizontally with spacing */
     }
 }
 
-/* Pantallas grandes */
-@media (min-width: 1024px) {
-    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
-    .projects__cover-text {
-        font-size: 0.9rem;
+/* Base style for screens larger than 767px */
+@media (min-width: 768px) {
+    /*------- Navigation Menu -------*/
+    .nav-menu {
+        display: flex;
+        justify-content: center; 
+        gap: 5rem; 
+        width: auto; 
     }
+
+    .nav-menu a {
+        font-size: 1.2em;
+        text-transform: uppercase; 
+    }
+
+    .nav-menu a:hover {
+        color: #fddb3a; 
+    }
+
+    .nav-menu a span {
+        display: inline; 
+    }
+
+    .nav-menu a i {
+        display: none; 
+    }
+
+    .nav-menu__dot {
+        display: block; 
+    }
+}
+
+/* Tablets */
+@media (min-width: 767px) and (max-width:1024px) {
+    /*------- Navigation Menu -------*/
+    
+}
+
+/* Laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Laptop-specific styles */
+}
+
+/* PCs with Larger Screens */
+@media (min-width: 1441px) {
+    /* Large PC-specific styles */
 }
