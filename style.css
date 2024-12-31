@@ -501,7 +501,7 @@ svg {
     margin: 7rem;
 }
 
-.work-experience__cards--container {
+.work-experience__cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -578,7 +578,7 @@ svg {
     text-decoration: underline;
 }
 
-/*------------------------------ Sección de Proyectos --------------------------------*/
+/*------------------------------ Projects Section --------------------------------*/
 .projects__container {
     display: flex;
     flex-direction: row;
@@ -843,7 +843,7 @@ svg {
   }
   
 
-/* ------------------------------ Responsividad ---------------------------------------*/
+/* ------------------------------ Responsive Design ---------------------------------------*/
 
 /* Phones */
 @media (max-width: 767px) {
@@ -975,6 +975,54 @@ svg {
     
     .skills__icon {
         width: 35px;
+    }
+
+    /*------- Work Experience Section -------*/
+    .work-experience {
+        margin: 1.5rem;;
+    }
+    
+    .work-experience__title {
+        font-size: 1.5rem;
+    }
+
+    .work-experience__cards-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .work-experience__card {
+        width: 45%;
+        height: 250px;
+        gap: 3rem;
+    }
+
+    .work-experience__card:hover {
+        transform: none; 
+        box-shadow: 0 0 0 5px #ffffff80; 
+    }
+
+    .work-experience__card:hover .work-experience__card__content {
+        transform: rotateX(-90deg); /* Disable hover flipping */
+    }
+
+    .work-experience__card__content {
+        transform: rotateX(1); /* Show content by default */
+    }
+
+    .work-experience__card.flipped .work-experience__card__content {
+        transform: rotateX(0deg); /* Flip content to be visible */
+    }
+    
+    .work-experience__card.flipped {
+        transform: scale(1.05); /* Optional: keep the scaling effect */
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Optional: add the shadow effect */
+    }
+
+    .work-experience__card__title, .work-experience__card__description {
+        font-size: 0.6rem;
     }
 }
 
