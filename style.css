@@ -157,7 +157,7 @@ body {
     padding: 2.5rem;
 }
 
-.presentation__foto {
+.presentation__photo {
     width: 60%;
     height: 60%;
     object-fit: cover;
@@ -166,7 +166,7 @@ body {
     margin-bottom: 5rem;
 }
 
-.presentation__titulo {
+.presentation__title {
     font-family: "Roboto Mono", monospace;
     font-size: 4rem;
     margin-bottom: 2rem;;
@@ -199,6 +199,7 @@ body {
 
 .social-media__card-body {
     width: 70%;
+    padding: 0.5rem;
     margin-top: 1rem;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 0.5rem;
@@ -302,7 +303,7 @@ body {
 
 
 
-/*------------------------------ Sección de Habilidades ------------------------------*/
+/*------------------------------ Skills Section ------------------------------*/
 /*https://codepen.io/arronhunt/pen/bGKpRWY*/
 .skills__title {
     font-family: 'Courier New', Courier, monospace;
@@ -887,51 +888,93 @@ svg {
     .presentation__container {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-content: space-around;
         margin: 0;
     }
 
     .presentation {
-        padding: 0px;
-        margin: 0px;
-        text-align: left;
+        flex-direction: row;
+        width: 90%;
+        padding: 0;
+        margin: 0;
         align-items: start;
+        gap: 1.5rem;
     }
 
     .presentation__card {
-        width: 95%;
+        width: 50%;
+        justify-content: center; 
+        height: 100%;
     }
 
     .presentation__card-body {
-        position: relative;
         display: flex;
-        align-items: start;
-        justify-content: flex-start;
-        padding: 1rem;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 100%; 
+        padding: 0.1rem;
     }
 
-    .presentation__titulo {
-        font-size: 2rem; 
+    .presentation__title {
+        font-size: 1.5rem;
         text-align: left; 
-        margin-bottom: 1rem;
+        margin-bottom: 0;
         position: relative; 
         top: 0;
         left: 0;
     }
 
-    .presentation__foto {
+    .presentation__photo {
         display: none; 
     }
 
-    .about-me {
-        width: 90%; /* Occupy 90% of screen width */
-        margin: 0 auto; /* Center horizontally */
-        margin-top: 1rem; /* Add some spacing */
+    .card-body {
+        padding: 0;
     }
 
-    .presentation__card {
-        width: 90%; /* Make it occupy 90% of screen width */
-        margin: 1rem auto; /* Center horizontally with spacing */
+    .icons__card-body{
+        padding: 0;
+        gap: 0;
+    }
+
+    .card-body img{
+        display: none;
+    }
+
+    .text__redes__card-body {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .social-media__card-body {
+        width: 90%;
+    }
+
+    .about-me {
+        width: 98%; 
+        margin: 0;
+        text-align: justify; 
+    }
+
+    .about-me__external-card {
+        width: 100%;
+        margin-top: 0.5rem;
+        height: auto;
+    }
+
+    .about-me__text {
+        font-family: 'Courier New', monospace;
+        font-size: 1rem;
+    }
+
+    /*------- Skills Section -------*/
+    .skills__title {
+        font-size: 2rem;
+    }
+    
+    .skills__icon {
+        width: 35px;
     }
 }
 
