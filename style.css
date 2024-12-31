@@ -80,8 +80,8 @@ body {
   
   .nav-menu a:nth-child(1):hover ~ .nav-menu__dot {
     left: auto;
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
+    -webkit-transform: translateX(-260px);
+    transform: translateX(-260px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -89,8 +89,8 @@ body {
   
   .nav-menu a:nth-child(2):hover ~ .nav-menu__dot {
     left: auto;
-    -webkit-transform: translateX(215px);
-    transform: translateX(215px);
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -98,8 +98,8 @@ body {
   
   .nav-menu a:nth-child(3):hover ~ .nav-menu__dot {
     left: auto;
-    -webkit-transform: translateX(390px);
-    transform: translateX(390px);
+    -webkit-transform: translateX(75px);
+    transform: translateX(75px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -107,8 +107,8 @@ body {
   
   .nav-menu a:nth-child(4):hover ~ .nav-menu__dot {
     left: auto;
-    -webkit-transform: translateX(585px);
-    transform: translateX(585px);
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -685,9 +685,9 @@ svg {
 .projects__book-card:hover .projects__cover-card {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    -webkit-transform: rotatey(-80deg);
-    -ms-transform: rotatey(-80deg);
-    transform: rotatey(-80deg);
+    -webkit-transform: rotatey(-85deg);
+    -ms-transform: rotatey(-85deg);
+    transform: rotatey(-85deg);
 }
 
 .projects__cover-text {
@@ -742,7 +742,7 @@ svg {
 }
 
 .contact__container {
-    width: 30%;
+    width: 60%;
     background: linear-gradient(#212121, #212121) padding-box,
                 linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
     border: 2px solid transparent;
@@ -846,25 +846,33 @@ svg {
 /* ------------------------------ Responsive Design ---------------------------------------*/
 
 /* Phones */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     /*------- Navigation Menu -------*/
+    .nav-menu__container {
+        position: sticky; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        background-color: #333; 
+        z-index: 1000; 
+        opacity: 0.95;
+        padding: 0.5em 0.5em;
+    }
+
     .nav-menu {
         display: flex;
         justify-content: space-around; 
         gap: 0; 
         width: 100%; 
+        padding: 10px 0; /* Adds some padding for a better look */
     }
 
     .nav-menu a {
         color: #f6f4e6;
         text-decoration: none;
         font-size: 1.5rem; 
-        text-transform: none; /* Remove uppercase transformation */
         font-weight: 500;
-        position: relative;
-        display: inline-flex; 
-        flex-direction: column;
-        align-items: center;
+        text-align: center; /* Ensures icons and text are centered */
         transition: color 0.2s ease-in-out;
     }
 
@@ -979,7 +987,7 @@ svg {
 
     /*------- Work Experience Section -------*/
     .work-experience {
-        margin: 1.5rem;;
+        margin: 6.5rem 1.5rem;
     }
     
     .work-experience__title {
@@ -1005,7 +1013,7 @@ svg {
     }
 
     .work-experience__card:hover .work-experience__card__content {
-        transform: rotateX(-90deg); /* Disable hover flipping */
+        transform: rotateX(-90deg); 
     }
 
     .work-experience__card__content {
@@ -1024,11 +1032,72 @@ svg {
     .work-experience__card__title, .work-experience__card__description {
         font-size: 0.6rem;
     }
+
+    /*------- Project Section -------*/
+    .projects {
+        margin: 6.5rem 1.5rem;
+    }
+
+    .projects__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .projects__book-card {
+        width: 45%;
+        height: 300px;
+        gap: 3rem;
+    }
+
+    .projects__cover-text {
+        font-size: 0.7rem;
+    }
+
+    .projects__book-card {
+        position: relative;
+        border-radius: 10px;
+        background-color: #697565;
+        box-shadow: 1px 1px 12px #000;
+        transform: preserve-3d;
+        perspective: 2000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        transition: all 0.5s;
+    }
+ 
+    .projects__book-card.flipped .projects__cover-card {
+        transform: rotatey(-85deg);
+    }
+    
+    .projects__cover-card {
+        top: 0;
+        position: absolute;
+        background-color: #3C3D37;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+        transform-origin: 0;
+        box-shadow: 1px 1px 12px #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Base style for screens larger than 767px */
 @media (min-width: 768px) {
     /*------- Navigation Menu -------*/
+    .nav-menu__container {
+        opacity: 0.98;
+    }
+
     .nav-menu {
         display: flex;
         justify-content: center; 
@@ -1059,17 +1128,28 @@ svg {
 }
 
 /* Tablets */
-@media (min-width: 767px) and (max-width:1024px) {
-    /*------- Navigation Menu -------*/
+@media (min-width: 767px) and (max-width: 1024px) {
+    /*------- Presentation Section -------*/
+    .presentation__photo {
+        display: block;
+        width: 30%;
+        height: 30%;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0;
+    }
     
 }
 
 /* Laptops */
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1560px) {
     /* Laptop-specific styles */
+    .projects__cover-text {
+        font-size: 0.9rem;
+    }
 }
 
 /* PCs with Larger Screens */
-@media (min-width: 1441px) {
+@media (min-width: 1561px) {
     /* Large PC-specific styles */
 }
